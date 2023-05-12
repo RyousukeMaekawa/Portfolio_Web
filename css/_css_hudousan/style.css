@@ -1,0 +1,111 @@
+﻿   /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 45px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    header h1 .subtitle {
+      font-size: 17px;
+      font-weight: normal;
+    }
+
+    header nav {
+      display: flex;
+    }
+
+    header nav a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    /* Main */
+main {
+margin-top: 18px;
+margin-left: 18px;
+  display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.property {
+  background-color: #eee;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+ justify-content: start;
+  padding: 16px;
+}
+
+.property h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.property p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.property:nth-child(1) {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.property:nth-child(2) {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.property:nth-child(3) {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+
+.property:nth-child(4) {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.property:nth-child(5) {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.property:nth-child(6) {
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1;
+}
+
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 16px;
+      font-size: 14px;
+      text-align: right;
+    }
